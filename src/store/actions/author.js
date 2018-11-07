@@ -35,6 +35,6 @@ export const postBook = (book, authorID) => {
           payload: createdBook
         })
       )
-      .catch(error => console.error(error));
+      .catch(error => console.error(error.response));
   };
 };
